@@ -1,0 +1,59 @@
+{
+    "paths": [
+        {
+            "name": "/people",
+            "lambdaFunction": "peoplefunction",
+            "privacy": {
+                "open": true
+            }
+        },
+        {
+            "name": "/crypto",
+            "lambdaFunction": "peoplefunction",
+            "privacy": {
+                "protected": true,
+                "auth": [
+                    "/POST",
+                    "/GET",
+                    "/PUT",
+                    "/PATCH",
+                    "/DELETE"
+                ],
+                "unauth": [
+                    "/GET"
+                ]
+            }
+        },
+        {
+            "name": "/jobs",
+            "lambdaFunction": "peoplefunction",
+            "privacy": {
+                "open": true
+            }
+        }
+    ],
+    "resourceName": "peopleapitwitch",
+    "apiName": "peopleapitwitch",
+    "functionArns": [
+        {
+            "lambdaFunction": "peoplefunction"
+        }
+    ],
+    "privacy": {
+        "auth": 1,
+        "unauth": 1,
+        "authRoleName": "srvlessapp-githubapi-20190514091928-authRole",
+        "unAuthRoleName": "srvlessapp-githubapi-20190514091928-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "peoplefunction",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ],
+    "uuid": "d2d45051"
+}

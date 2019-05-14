@@ -1,0 +1,36 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "srvlessapp-dev-20190514084139-authRole",
+            "UnauthRoleArn": "arn:aws:iam::557458351015:role/srvlessapp-dev-20190514084139-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::557458351015:role/srvlessapp-dev-20190514084139-authRole",
+            "Region": "eu-central-1",
+            "DeploymentBucketName": "srvlessapp-dev-20190514084139-deployment",
+            "UnauthRoleName": "srvlessapp-dev-20190514084139-unauthRole",
+            "StackName": "srvlessapp-dev-20190514084139",
+            "StackId": "arn:aws:cloudformation:eu-central-1:557458351015:stack/srvlessapp-dev-20190514084139/c4328780-765e-11e9-8a76-0a43c0b04aee"
+        },
+        "categories": {
+            "auth": {
+                "cognito22a8359c": {}
+            }
+        }
+    },
+    "githubapi": {
+        "awscloudformation": {
+            "AuthRoleName": "srvlessapp-githubapi-20190514091928-authRole",
+            "UnauthRoleArn": "arn:aws:iam::557458351015:role/srvlessapp-githubapi-20190514091928-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::557458351015:role/srvlessapp-githubapi-20190514091928-authRole",
+            "Region": "eu-central-1",
+            "DeploymentBucketName": "srvlessapp-githubapi-20190514091928-deployment",
+            "UnauthRoleName": "srvlessapp-githubapi-20190514091928-unauthRole",
+            "StackName": "srvlessapp-githubapi-20190514091928",
+            "StackId": "arn:aws:cloudformation:eu-central-1:557458351015:stack/srvlessapp-githubapi-20190514091928/0cf2d9c0-7664-11e9-9ddd-0692890e48f0"
+        },
+        "categories": {
+            "auth": {
+                "cognito22a8359c": {}
+            }
+        }
+    }
+}
