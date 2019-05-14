@@ -8,6 +8,10 @@ function App() {
   const [crypto, updateCrypto] = useState([])
   async function callApi() {
     try {
+      const cryptoData = await API.get('peopleapitwitch', '/crypto')
+      updateCrypto(cryptoData.crypto.data)
+      console.log('cryptoData: ', cryptoData)
+      
       const jobData = await API.get('peopleapitwitch', '/jobs')
       console.log('jobData: ', jobData)
     } catch (err) { console.log({ err })}
